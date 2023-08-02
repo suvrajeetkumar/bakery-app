@@ -36,6 +36,7 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    z-index: 2;
 }
 
 .show-navbar {
