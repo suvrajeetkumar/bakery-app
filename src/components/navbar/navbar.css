@@ -1,0 +1,182 @@
+.navbar-bars {
+    display: none;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.navbar-wrapper {
+    height: 180px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-wrapper-grey {
+    height: 100%;
+    width: 100%;
+    background-color: #ebe1d4;
+}
+
+.navbar-card {
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    height: 200px;
+    box-shadow: 0 0 10px 0 #ccc;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.show-navbar {
+    display: grid !important;
+}
+
+.hide-navbar {
+    display: none !important;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-items:hover {
+    background-color: #fef7ec;
+}
+
+.navbar-image {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-image-wrapper-recipe {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar-image-wrapper-cake {
+    height: 150px;
+    width: 150px;
+}
+
+.navbar-image-wrapper-class {
+    height: 110px;
+    width: 110px;
+}
+
+.navbar-text-item-product {
+    width: 50%;
+    text-align: start;
+}
+
+.navbar-text-item-cake {
+    width: 52%;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.navbar-text-item-recipe {
+    width: 54%;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.navbar-item-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.cart-button-wrapper {
+    height: 50px;
+    width: 80px;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cart-logo {
+    height: 70%;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-card {
+        display: none;
+        grid-template-columns: auto;
+        height: max-content;
+        top: 40px;
+        padding: 5% 0;
+        position: absolute;
+    }
+    
+    .navbar-image-wrapper-class {
+        padding: 10px 0px 10px 40px;
+    }
+    
+    .navbar-image-wrapper-recipe {
+        padding: 20px 0px 15px 40px;
+    }
+
+    .navbar-bars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-wrapper {
+        height: 100px;
+    }
+
+    .navbar-wrapper-grey {
+        height: 100px;
+        position: absolute;
+        top: 0px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .navbar-image-wrapper-cake {
+        height: 110px;
+        width:  110px;
+    }
+
+    .navbar-image-wrapper-class {
+        height: 80px;
+        width: 80px;
+    }
+
+    .navbar-image-wrapper-recipe {
+        height: 80px;
+        width: 80px;
+    }
+    
+    .navbar-item-header {
+        font-size: 1.2rem;
+    }
+
+    .navbar-item-content {
+        display: none;
+    }
+  }

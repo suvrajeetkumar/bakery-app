@@ -1,0 +1,13 @@
+.product-filter {
+    margin: 0 0 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    /* padding: 500px; */
+    padding-right: 10%;
+}
+
+.filter-txt {
+    font-weight: 600;
+    margin-right: 10px;
+}

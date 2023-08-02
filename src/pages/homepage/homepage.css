@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0% 0% 5% 0;
+    width: max-content;
+    grid-gap: 40px 10px;
+}
+
+  .product-underline-wrapper {
+    width: 270px;
+    /* background: #ff000045; */
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .underline {
+    width: 40%;
+    height: 2px;
+    background: black;
+  }
+
+  /* Product page header styles */
+  .product-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #e8e8e8; */
+    height: 100px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+  
+  .product-title {
+    font-size: 36px;
+    color: black; /* Your own color for the text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Lobster', sans-serif;
+    position: relative; /* For text animation */
+  }
+  
+  /* Text animation */
+  
+
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 30px 10px;
+    }
+    .product-header {
+        margin: 0;
+    }
+}
